@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employment Equity Compliance – SpecCon / TAP Business</title>
+\ \ <link\ href="assets/img/favicon\.png"\ rel="icon">\n\ \ <link\ href="assets/img/apple-touch-icon\.png"\ rel="apple-touch-icon">\n\ \ <link\ href="assets/vendor/bootstrap/css/bootstrap\.min\.css"\ rel="stylesheet">\n\ \ <link\ href="assets/vendor/bootstrap-icons/bootstrap-icons\.css"\ rel="stylesheet">\n\ \ <link\ href="assets/vendor/aos/aos\.css"\ rel="stylesheet">\n\ \ <link\ href="assets/vendor/glightbox/css/glightbox\.min\.css"\ rel="stylesheet">\n\ \ <link\ href="assets/vendor/swiper/swiper-bundle\.min\.css"\ rel="stylesheet">\n\ \ <link\ href="assets/css/main\.css"\ rel="stylesheet">
+  <!-- Minimal, non-theming CSS: sticky nav + current link underline. -->
+  <style>
+    .site-nav { position: sticky; top: 0; z-index: 1000; background: inherit; }
+    .site-nav a { text-decoration: none; }
+    .site-nav a.active { text-decoration: underline; }
+    /* Optional: keep content readable without theme */
+    main { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+    nav ul { display: flex; flex-wrap: wrap; gap: .75rem; padding: .5rem 1rem; margin: 0; list-style: none; }
+    header, section, footer { padding: 2rem 1rem; }
+    .cta-row { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .grid { display: grid; gap: 1rem; }
+    .grid.cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid.cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width: 800px) {
+      .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; }
+    }
+    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+    table { width: 100%; border-collapse: collapse; }
+    td, th { padding: .75rem; border: 1px solid currentColor; }
+    small { display: block; margin-top: .5rem; }
+    details { margin: .5rem 0; }
+    .visually-hidden { position: absolute; left: -9999px; }
+  </style>
+</head>
+
+<body>
+  <!-- Sticky Navigation (content + behavior only; style later) -->
+  <nav class="site-nav" role="navigation" aria-label="Main">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#why-comply">Why Comply?</a></li>
+      <li><a href="#our-solution">Our Solution</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#demo">Book a Demo</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="https://app.tap.co.za" rel="noopener">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO (Home) -->
+    <header id="home" aria-labelledby="hero-title">
+      <!-- Optional hero image slot; add your own styling/theme later -->
+      <img src="" alt="Diverse team at work" class="visually-hidden" />
+      <h1 id="hero-title">Employment Equity Compliance Made Easy</h1>
+      <p>
+        If you employ 50 or more people, the Employment Equity Act requires you to prepare a plan, submit reports and meet sectoral targets. Our platform simplifies compliance so you can focus on your business.
+      </p>
+      <div class="cta-row" aria-label="Primary actions">
+        <a href="#demo">Book a Free Demo</a>
+        <a href="#why-comply">Learn More</a>
+      </div>
+      <!-- Optional secondary Login button in hero, matching nav target -->
+      <!-- <a href="https://app.tap.co.za" rel="noopener">Login</a> -->
+    </header>
+
+    <!-- WHY COMPLY? -->
+    <section id="why-comply" aria-labelledby="why-title">
+      <h2 id="why-title">Why Comply with the Employment Equity Act?</h2>
+      <p>
+        The Employment Equity Act (EE Act) promotes equal opportunity and fair treatment in employment by eliminating unfair discrimination and implementing affirmative action measures. Recent amendments effective 1 January 2025 redefine designated employers and tighten reporting obligations.
+      </p>
+
+      <h3>Who must comply?</h3>
+      <ul>
+        <li>From 1 January 2025, a designated employer is any organisation that employs 50 or more people. Turnover thresholds no longer apply.</li>
+        <li>Smaller employers can voluntarily apply for a compliance certificate if they wish to do business with the state.</li>
+      </ul>
+
+      <h3>Your duties</h3>
+      <ul class="grid cols-2" aria-label="Duties list">
+        <li>Consult with your employees or trade union representatives.</li>
+        <li>Conduct a workforce analysis to identify barriers and under representation.</li>
+        <li>Prepare a five year Employment Equity Plan that sets numerical targets aligned with government issued sectoral targets.</li>
+        <li>Submit annual EEA2 (employment equity report) and EEA4 (income differentials) forms through the Department of Labour’s online portal.</li>
+        <li>Assign senior managers to implement and monitor your plan.</li>
+      </ul>
+
+      <h3>Deadlines for 2025/26</h3>
+      <ul class="grid cols-3" aria-label="Deadlines list">
+        <li>The 2025 reporting cycle opens on 1 September 2025.</li>
+        <li>Manual submissions close on 1 October 2025; online submissions remain open until 15 January 2026.</li>
+        <li>Failure to comply can result in heavy fines, legal action and exclusion from government tenders.</li>
+      </ul>
+    </section>
+
+    <!-- OUR SOLUTION -->
+    <section id="our-solution" aria-labelledby="solution-title">
+      <h2 id="solution-title">Our EE Compliance Platform</h2>
+      <p>
+        SpecCon’s platform streamlines your entire Employment Equity process. Hosted on our TAP Business platform, it guides you from data collection to submission while providing rich e learning resources for your team.
+      </p>
+
+      <div class="cards" aria-label="Feature list">
+        <article>
+          <h3>Centralised Data Capture</h3>
+          <p>Collect entity information, workforce profiles and payroll data in one secure system.</p>
+        </article>
+
+        <article>
+          <h3>Workforce Analysis (EEA12)</h3>
+          <p>Identify barriers and representation gaps with built in analytics to prepare your EEA12 report.</p>
+        </article>
+
+        <article>
+          <h3>EE Plan Drafting (EEA13)</h3>
+          <p>Draft a compliant five year plan with templates aligned to government sectoral targets.</p>
+        </article>
+
+        <article>
+          <h3>Auto generated Reports</h3>
+          <p>Instantly produce EEA2, EEA4, EEA12 and EEA13 reports in the correct formats ready for submission.</p>
+        </article>
+
+        <article>
+          <h3>Integrated Training Library</h3>
+          <p>Access over 300 e learning courses. Create teams, assign courses, set deadlines and issue custom certificates using your own branding and SMTP settings.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Affordable Pricing</h2>
+      <p>All the features you need – simple pricing with no hidden fees.</p>
+
+      <table aria-describedby="pricing-title">
+        <thead>
+          <tr>
+            <th scope="col">Package Name</th>
+            <th scope="col">Details</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Standard</th>
+            <td>Up to 200 employees. Includes full data capture, analytics, report generation, e learning library, custom certificates and SMTP integration.</td>
+            <td>R 1 000 / month</td>
+          </tr>
+          <tr>
+            <th scope="row">Enterprise</th>
+            <td>For 200+ employees. Includes all Standard features plus tailored onboarding and priority support.</td>
+            <td>Request a Quote</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cta-row" aria-label="Pricing actions">
+        <a href="#demo">Subscribe (Standard)</a>
+        <a href="#demo">Request Quote (Enterprise)</a>
+      </div>
+
+      <small>Subscriptions are billed monthly and may be cancelled with 30 days’ notice.</small>
+    </section>
+
+    <!-- BOOK A DEMO -->
+    <section id="demo" aria-labelledby="demo-title">
+      <h2 id="demo-title">Book a Free Demo</h2>
+      <p>
+        Ready to see our platform in action? Fill out the form and one of our compliance specialists will contact you to schedule a personalised demonstration.
+      </p>
+
+      <!-- Replace action with your processing endpoint or form handler -->
+      <form action="#" method="post" novalidate>
+        <div class="grid cols-2">
+          <label>
+            Name*<br />
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Company*<br />
+            <input type="text" name="company" required />
+          </label>
+          <label>
+            Role<br />
+            <input type="text" name="role" />
+          </label>
+          <label>
+            Email*<br />
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Phone*<br />
+            <input type="tel" name="phone" required />
+          </label>
+          <label>
+            Number of Employees<br />
+            <input type="number" name="employees" min="1" />
+          </label>
+        </div>
+
+        <label>
+          Message (optional)<br />
+          <textarea name="message" rows="4"></textarea>
+        </label>
+
+        <label>
+          <input type="checkbox" name="marketing_consent" value="yes" />
+          I agree to receive communications from SpecCon.
+        </label>
+
+        <div class="cta-row">
+          <button type="submit">Schedule Demo</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- RESOURCES & FAQs -->
+    <section id="resources" aria-labelledby="resources-title">
+      <h2 id="resources-title">Resources &amp; FAQs</h2>
+
+      <!-- FAQs using native details/summary (no theme needed) -->
+      <div aria-label="FAQs">
+        <details>
+          <summary>Do I need to comply if I have fewer than 50 employees?</summary>
+          <p>Smaller employers are not designated from 1 January 2025 but can voluntarily apply for a compliance certificate if they wish to do business with the state.</p>
+        </details>
+
+        <details>
+          <summary>What’s the difference between EEA2 and EEA4?</summary>
+          <p>EEA2 covers employment equity data; EEA4 deals with remuneration differentials.</p>
+        </details>
+
+        <details>
+          <summary>How secure is my data on your platform?</summary>
+          <p>Data is protected through encryption and user-based permissions, and the platform aligns with POPIA requirements.</p>
+        </details>
+      </div>
+
+      <!-- Blog/article links — replace # with actual URLs -->
+      <h3>Articles</h3>
+      <ul>
+        <li><a href="#">Understanding sectoral targets: what they mean for your EE Plan</a></li>
+        <li><a href="#">EE compliance checklist for 2025 submissions</a></li>
+        <li><a href="#">Tips to streamline EEA2 and EEA4 reporting</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer aria-label="Site footer">
+    <p>&copy; SpecCon / TAP Business</p>
+  </footer>
+
+  <!-- Minimal JS to underline the current nav item while scrolling. -->
+  <script>
+    (function () {
+      const links = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
+      const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+      const sections = Array.from(document.querySelectorAll('main section[id], header#home'));
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const id = entry.target.id;
+          const link = map.get(id);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            links.forEach(a => a.classList.remove('active'));
+            link.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-50% 0px -50% 0px', threshold: 0 });
+
+      sections.forEach(sec => io.observe(sec));
+    })();
+  </script>
+
+  <!-- Dewi vendor JS (no extra template content) -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

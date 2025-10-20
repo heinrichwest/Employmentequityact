@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employment Equity Compliance – SpecCon / TAP Business</title>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File (Dewi) -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Minimal, non-theming CSS: sticky nav + current link underline. -->
+  <style>.visually-hidden { position: absolute; left: -9999px; }</style>
+<style>
+  main .section { color: var(--default-color); }
+  main .section h1, main .section h2, main .section h3 { color: var(--heading-color); }
+  .pricing .table { color: var(--default-color); }
+</style></head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="#home" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="SpecCon / TAP Business"  style="height: 80px; width: 80px; object-fit: contain;">
+        <span class="visually-hidden">SpecCon / TAP Business</span>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#why-comply">Why Comply?</a></li>
+          <li><a href="#our-solution">Our Solution</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#demo">Book a Demo</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="https://app.tap.co.za" rel="noopener">Login</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- Sticky Navigation (content + behavior only; style later) -->
+
+  <main>
+    <!-- HERO (Home) -->
+        <section id="home" class="hero section dark-background">
+      <img src="assets/img/hero-bg.jpg" alt="">
+      <div class="container position-relative d-flex flex-column align-items-start justify-content-center" style="min-height: 60vh;">
+        <h2>Employment Equity Compliance Made Easy</h2>
+        <p>If you employ 50 or more people, the Employment Equity Act requires you to prepare a plan, submit reports and meet sectoral targets. Our platform simplifies compliance so you can focus on your business.</p>
+        <div class="d-flex gap-2 mt-3" aria-label="Primary actions">
+          <a href="#demo" class="btn-get-started">Book a Free Demo</a>
+          <a href="#why-comply" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY COMPLY? -->
+        <section id="why-comply" class="about section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Comply with the Employment Equity Act?</h2>
+        </div>
+        <div class="row gy-4">
+          <div class="col-12">
+            <p>
+              The Employment Equity Act (EE Act) promotes equal opportunity and fair treatment in employment by eliminating unfair discrimination and implementing affirmative action measures. Recent amendments effective 1 January 2025 redefine designated employers and tighten reporting obligations.
+            </p>
+            <h3 class="h5 mt-4">Who must comply?</h3>
+            <ul>
+              <li>From 1 January 2025, a designated employer is any organisation that employs 50 or more people. Turnover thresholds no longer apply.</li>
+              <li>Smaller employers can voluntarily apply for a compliance certificate if they wish to do business with the state.</li>
+            </ul>
+            <h3 class="h5 mt-4">Your duties</h3>
+<!-- EEA Sections (Designated Employer Duties) -->
+<section id="eea-sections" class="section light-background">
+  <div class="container">
+  <style>
+    /* Scoped button color overrides for the EEA section */
+    #eea-sections .btn-primary {
+      --bs-btn-bg: #ff4a17;
+      --bs-btn-border-color: #ff4a17;
+      --bs-btn-hover-bg: #e04315;
+      --bs-btn-hover-border-color: #e04315;
+      --bs-btn-active-bg: #c83c13;
+      --bs-btn-active-border-color: #c83c13;
+    }
+    #eea-sections .btn-outline-primary {
+      --bs-btn-color: #ff4a17;
+      --bs-btn-border-color: #ff4a17;
+      --bs-btn-hover-bg: #ff4a17;
+      --bs-btn-hover-border-color: #ff4a17;
+      --bs-btn-hover-color: #ffffff;
+      --bs-btn-active-bg: #e04315;
+      --bs-btn-active-border-color: #e04315;
+      --bs-btn-active-color: #ffffff;
+    }
+  </style>
+  <div class="container">
+    <div class="section-title">
+      <h2>Employment Equity Act – Designated Employer Duties</h2>
+      <p class="mb-0">Quick-reference guide to key EEA sections with collapsible summaries.</p>
+    </div>
+
+    <!-- Controls -->
+    <div class="d-flex gap-2 mb-3" aria-label="Expand or collapse all sections">
+      <button class="btn btn-primary" id="eeaExpandAll" type="button">
+        <i class="bi bi-arrows-fullscreen me-1"></i> Expand all
+      </button>
+      <button class="btn btn-outline-primary" id="eeaCollapseAll" type="button">
+        <i class="bi bi-arrows-angle-contract me-1"></i> Collapse all
+      </button>
+    </div>
+
+    <div class="accordion" id="eeaAccordion">
+      <!-- s13 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s13-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s13" aria-expanded="false" aria-controls="eea-s13">
+            <span class="badge text-bg-primary me-2">s13</span> Duties of Designated Employers
+          </button>
+        </h3>
+        <div id="eea-s13" class="accordion-collapse collapse" aria-labelledby="eea-s13-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li><strong>Consult</strong> with employees or their representatives.</li>
+              <li><strong>Analyse</strong> policies, practices, and workforce profile.</li>
+              <li><strong>Prepare &amp; implement</strong> an Employment Equity Plan (EEP).</li>
+              <li><strong>Report</strong> progress to the Director-General (DG).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s15 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s15-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s15" aria-expanded="false" aria-controls="eea-s15">
+            <span class="badge text-bg-primary me-2">s15</span> Affirmative Action Measures
+          </button>
+        </h3>
+        <div id="eea-s15" class="accordion-collapse collapse" aria-labelledby="eea-s15-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li><strong>Eliminate barriers</strong> to equity and <strong>promote diversity</strong>.</li>
+              <li><strong>Reasonable accommodation</strong> for designated groups (Black people, women, persons with disabilities).</li>
+              <li><strong>Equitable representation</strong> across categories and levels.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s16–17 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s16-17-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s16-17" aria-expanded="false" aria-controls="eea-s16-17">
+            <span class="badge text-bg-primary me-2">s16–17</span> Consultation
+          </button>
+        </h3>
+        <div id="eea-s16-17" class="accordion-collapse collapse" aria-labelledby="eea-s16-17-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Consult with <strong>recognised unions, workplace forums</strong> or elected representatives.</li>
+              <li>Cover the <strong>analysis</strong>, <strong>EEP</strong> preparation/implementation, and <strong>monitoring &amp; reporting</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s18 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s18-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s18" aria-expanded="false" aria-controls="eea-s18">
+            <span class="badge text-bg-primary me-2">s18</span> Disclosure of Information
+          </button>
+        </h3>
+        <div id="eea-s18" class="accordion-collapse collapse" aria-labelledby="eea-s18-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Provide consulting parties with all <strong>relevant information</strong> (subject to lawful confidentiality limits).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s19 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s19-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s19" aria-expanded="false" aria-controls="eea-s19">
+            <span class="badge text-bg-primary me-2">s19</span> Analysis
+          </button>
+        </h3>
+        <div id="eea-s19" class="accordion-collapse collapse" aria-labelledby="eea-s19-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Analyse <strong>policies &amp; practices</strong> to identify barriers.</li>
+              <li>Assess <strong>workforce profile</strong> for under-representation of designated groups.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s20 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s20-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s20" aria-expanded="false" aria-controls="eea-s20">
+            <span class="badge text-bg-primary me-2">s20</span> Employment Equity Plan (EEP)
+          </button>
+        </h3>
+        <div id="eea-s20" class="accordion-collapse collapse" aria-labelledby="eea-s20-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Set <strong>objectives, timetables</strong> and measures; include <strong>monitoring &amp; evaluation</strong>.</li>
+              <li>Provide dispute-resolution procedures; typical duration <strong>1–5 years</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s21 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s21-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s21" aria-expanded="false" aria-controls="eea-s21">
+            <span class="badge text-bg-primary me-2">s21</span> Reporting
+          </button>
+        </h3>
+        <div id="eea-s21" class="accordion-collapse collapse" aria-labelledby="eea-s21-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Submit EE reports to the DG:
+                <ul>
+                  <li><strong>Annually</strong> if <strong>150+ employees</strong>.</li>
+                  <li><strong>Every two years</strong> if fewer than 150.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s22 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s22-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s22" aria-expanded="false" aria-controls="eea-s22">
+            <span class="badge text-bg-primary me-2">s22</span> Reporting by Listed Entities
+          </button>
+        </h3>
+        <div id="eea-s22" class="accordion-collapse collapse" aria-labelledby="eea-s22-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Publish a <strong>summary of the EE report</strong> in the entity’s <strong>annual report</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s23 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s23-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s23" aria-expanded="false" aria-controls="eea-s23">
+            <span class="badge text-bg-primary me-2">s23</span> Successive Employment Equity Plans
+          </button>
+        </h3>
+        <div id="eea-s23" class="accordion-collapse collapse" aria-labelledby="eea-s23-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Prepare a new plan <strong>immediately</strong> on expiry of the current plan to ensure continuity.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s24 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s24-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s24" aria-expanded="false" aria-controls="eea-s24">
+            <span class="badge text-bg-primary me-2">s24</span> Assigning Responsibility
+          </button>
+        </h3>
+        <div id="eea-s24" class="accordion-collapse collapse" aria-labelledby="eea-s24-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Assign one or more <strong>senior managers</strong> to implement and monitor the EEP.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s25 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s25-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s25" aria-expanded="false" aria-controls="eea-s25">
+            <span class="badge text-bg-primary me-2">s25</span> Accountability
+          </button>
+        </h3>
+        <div id="eea-s25" class="accordion-collapse collapse" aria-labelledby="eea-s25-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Assigned managers are <strong>directly accountable</strong> to the CEO (or equivalent) for EEP outcomes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s26 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s26-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s26" aria-expanded="false" aria-controls="eea-s26">
+            <span class="badge text-bg-primary me-2">s26</span> Training
+          </button>
+        </h3>
+        <div id="eea-s26" class="accordion-collapse collapse" aria-labelledby="eea-s26-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>Provide <strong>appropriate training</strong> to managers and EE forums to enable compliance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s27 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s27-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s27" aria-expanded="false" aria-controls="eea-s27">
+            <span class="badge text-bg-primary me-2">s27</span> Income Differentials
+          </button>
+        </h3>
+        <div id="eea-s27" class="accordion-collapse collapse" aria-labelledby="eea-s27-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li><strong>Identify, report &amp; address</strong> remuneration differentials (race &amp; gender) via prescribed forms (e.g., EEA4) to the ECC.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s43–44 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s43-44-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s43-44" aria-expanded="false" aria-controls="eea-s43-44">
+            <span class="badge text-bg-primary me-2">s43–44</span> Monitoring &amp; Assessments by DG
+          </button>
+        </h3>
+        <div id="eea-s43-44" class="accordion-collapse collapse" aria-labelledby="eea-s43-44-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li><strong>s43:</strong> DG may assess compliance by reviewing reports, plans and practices.</li>
+              <li><strong>s44:</strong> DG may require further info, conduct reviews and direct <strong>corrective steps</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- s53 -->
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="eea-s53-h">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eea-s53" aria-expanded="false" aria-controls="eea-s53">
+            <span class="badge text-bg-primary me-2">s53</span> State Contracts – Certificate of Compliance
+          </button>
+        </h3>
+        <div id="eea-s53" class="accordion-collapse collapse" aria-labelledby="eea-s53-h" data-bs-parent="#eeaAccordion">
+          <div class="accordion-body">
+            <ul class="mb-2">
+              <li>To contract with the state, obtain an <strong>EEA compliance certificate</strong> from the Minister / delegate.</li>
+            </ul>
+            <p class="small text-muted mb-0">Tip: Keep your latest EEA2 &amp; EEA4 submissions and current EEP handy when applying.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-4 mb-0 small text-muted">
+      ⚖️ Practical summary for quick reference and training. For implementation, consult the EEA, regulations, codes of good practice, and current government notices.
+    </p>
+  </div>
+</section>
+
+<!-- Expand/Collapse All (Bootstrap 5) -->
+<script>
+  (function () {
+    const acc = document.getElementById('eeaAccordion');
+    const expandAll = document.getElementById('eeaExpandAll');
+    const collapseAll = document.getElementById('eeaCollapseAll');
+
+    function allButtons() {
+      return Array.from(acc.querySelectorAll('.accordion-button'));
+    }
+
+    expandAll.addEventListener('click', () => {
+      allButtons().forEach(btn => {
+        const target = document.querySelector(btn.getAttribute('data-bs-target'));
+        if (!target.classList.contains('show')) {
+          new bootstrap.Collapse(target, { toggle: true }); // open
+        }
+      });
+      expandAll.blur();
+    });
+
+    collapseAll.addEventListener('click', () => {
+      allButtons().forEach(btn => {
+        const target = document.querySelector(btn.getAttribute('data-bs-target'));
+        if (target.classList.contains('show')) {
+          new bootstrap.Collapse(target, { toggle: true }); // close
+        }
+      });
+      collapseAll.blur();
+    });
+  })();
+</script>
+</section>
+<!-- Deadlines (EEA 2025/26) -->
+<section id="eea-deadlines" class="section light-background">
+  <div class="container">
+    <div class="section-title">
+      <h2>Deadlines for 2025/26</h2>
+      <p class="mb-0">Employment Equity reporting window & compliance</p>
+    </div>
+
+    <!-- Timeline / Progress -->
+    <div class="position-relative mb-4">
+      <div class="progress" style="height:6px;">
+        <div id="eeaDeadlineProgress" class="progress-bar" role="progressbar" style="width:0%"></div>
+      </div>
+      <div class="row text-center g-0 pt-3">
+        <div class="col-4">
+          <div class="d-inline-flex align-items-center gap-2">
+            <span class="timeline-dot bg-primary rounded-circle d-inline-block" style="width:10px;height:10px;"></span>
+            <span class="date-chip">1 Sep 2025</span>
+          </div>
+          <div class="small text-muted mt-1">Reporting cycle opens</div>
+        </div>
+        <div class="col-4">
+          <div class="d-inline-flex align-items-center gap-2">
+            <span class="timeline-dot bg-primary rounded-circle d-inline-block" style="width:10px;height:10px;"></span>
+            <span class="date-chip">1 Oct 2025</span>
+          </div>
+          <div class="small text-muted mt-1">Manual submissions close</div>
+        </div>
+        <div class="col-4">
+          <div class="d-inline-flex align-items-center gap-2">
+            <span class="timeline-dot bg-primary rounded-circle d-inline-block" style="width:10px;height:10px;"></span>
+            <span class="date-chip">15 Jan 2026</span>
+          </div>
+          <div class="small text-muted mt-1">Online submissions close</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4">
+      <!-- Opens -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="h5 mb-0">Reporting cycle opens</h3>
+              <i class="bi bi-calendar2-plus display-6 text-primary" aria-hidden="true"></i>
+            </div>
+            <div class="mt-2 mb-3">
+              <span class="date-chip">1 Sep 2025</span>
+            </div>
+            <p class="mb-0 text-muted">
+              The 2025 reporting cycle opens on <strong>1 September 2025</strong>. Prepare EEA2 &amp; EEA4 and confirm your EEP is up to date.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manual close -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="h5 mb-0">Manual submissions close</h3>
+              <i class="bi bi-inboxes display-6 text-primary" aria-hidden="true"></i>
+            </div>
+            <div class="mt-2 mb-3">
+              <span class="date-chip">1 Oct 2025</span>
+            </div>
+            <p class="mb-0 text-muted">
+              Manual submissions close on <strong>1 October 2025</strong>. Online submissions remain open until <strong>15 January 2026</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance consequence -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <div class="card-body p-4">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="h5 mb-0">Non-compliance</h3>
+              <i class="bi bi-exclamation-octagon display-6 text-primary" aria-hidden="true"></i>
+            </div>
+            <div class="mt-2 mb-3">
+              <span class="date-chip">Important</span>
+            </div>
+            <p class="mb-0 text-muted">
+              Failure to comply can result in <strong>heavy fines</strong>, <strong>legal action</strong> and <strong>exclusion from government tenders</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional helper note -->
+    <p class="small text-muted mt-4 mb-0">
+      Tip: set internal reminders 2–3 weeks before each deadline for approvals and sign-offs.
+    </p>
+  </div>
+</section>
+
+<!-- Scoped styles for this block -->
+<style>
+  #eea-deadlines .date-chip{
+    display:inline-block;
+    padding:.35rem .6rem;
+    border-radius:999px;
+    font-weight:600;
+    background:rgba(var(--bs-primary-rgb), .1);
+    color:var(--bs-primary);
+    border:1px solid rgba(var(--bs-primary-rgb), .2);
+  }
+  @media (prefers-reduced-motion:no-preference){
+    
+<style>
+  /* Stronger headings for the Deadlines section */
+  #eea-deadlines .section-title h2 {
+    font-size: clamp(2.2rem, 2.2vw + 1rem, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  #eea-deadlines h3 {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+  }
+</style>
+
+<!-- Tiny JS to animate the progress across the window (optional) -->
+<script>
+  (function () {
+    // Define the window
+    const start = new Date('2025-09-01T00:00:00');
+    const manualClose = new Date('2025-10-01T00:00:00'); // informational milestone
+    const end = new Date('2026-01-15T23:59:59');
+    const now = new Date();
+
+    const percent = (now <= start) ? 0 :
+                    (now >= end) ? 100 :
+                    Math.min(100, Math.max(0, ((now - start) / (end - start)) * 100));
+
+    const bar = document.getElementById('eeaDeadlineProgress');
+    if (bar) bar.style.width = percent.toFixed(2) + '%';
+  })();
+</script>
+
+    <!-- OUR SOLUTION -->
+        <section id="our-solution" class="services section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our EE Compliance Platform</h2>
+          <p>SpecCon’s platform streamlines your entire Employment Equity process. Hosted on our TAP Business platform, it guides you from data collection to submission while providing rich e‑learning resources for your team.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-xl-4 col-md-6">
+            <div class="card h-100 shadow-sm"><div class="card-body">
+              <h3 class="h5">Centralised Data Capture</h3>
+              <p class="mb-0">Collect entity information, workforce profiles and payroll data in one secure system.</p>
+            </div></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card h-100 shadow-sm"><div class="card-body">
+              <h3 class="h5">Workforce Analysis (EEA12)</h3>
+              <p class="mb-0">Identify barriers and representation gaps with built in analytics to prepare your EEA12 report.</p>
+            </div></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card h-100 shadow-sm"><div class="card-body">
+              <h3 class="h5">EE Plan Drafting (EEA13)</h3>
+              <p class="mb-0">Draft a compliant five year plan with templates aligned to government sectoral targets.</p>
+            </div></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card h-100 shadow-sm"><div class="card-body">
+              <h3 class="h5">Auto generated Reports</h3>
+              <p class="mb-0">Instantly produce EEA2, EEA4, EEA12 and EEA13 reports in the correct formats ready for submission.</p>
+            </div></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="card h-100 shadow-sm"><div class="card-body">
+              <h3 class="h5">Integrated Training Library</h3>
+              <p class="mb-0">Access over 300 e‑learning courses. Create teams, assign courses, set deadlines and issue custom certificates using your own branding and SMTP settings.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+        <section id="pricing" class="pricing section light-background">
+      <div class="container">
+        <div class="section-title">
+          <h2>Affordable Pricing</h2>
+          <p>All the features you need – simple pricing with no hidden fees.</p>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Package Name</th>
+                <th scope="col">Details</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Standard</th>
+                <td>Up to 200 employees. Includes full data capture, analytics, report generation, e‑learning library, custom certificates and SMTP integration.</td>
+                <td>R 1 000 / month</td>
+              </tr>
+              <tr>
+                <th scope="row">Enterprise</th>
+                <td>For 200+ employees. Includes all Standard features plus tailored onboarding and priority support.</td>
+                <td>Request a Quote</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="d-flex gap-2" aria-label="Pricing actions">
+          <a href="#demo" class="btn btn-primary">Subscribe (Standard)</a>
+          <a href="#demo" class="btn btn-outline-primary">Request Quote (Enterprise)</a>
+        </div>
+        <small class="d-block mt-2">Subscriptions are billed monthly and may be cancelled with 30 days’ notice.</small>
+      </div>
+    </section>
+
+    <!-- BOOK A DEMO -->
+        <section id="demo" class="contact section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Book a Free Demo</h2>
+          <p>Ready to see our platform in action? Fill out the form and one of our compliance specialists will contact you to schedule a personalised demonstration.</p>
+        </div>
+        <form action="#" method="post" novalidate class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">Name*</label>
+            <input type="text" name="name" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Company*</label>
+            <input type="text" name="company" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Role</label>
+            <input type="text" name="role" class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Email*</label>
+            <input type="email" name="email" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Phone*</label>
+            <input type="tel" name="phone" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Number of Employees</label>
+            <input type="number" name="employees" min="1" class="form-control" />
+          </div>
+          <div class="col-12">
+            <label class="form-label">Message (optional)</label>
+            <textarea name="message" rows="4" class="form-control"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="marketing_consent" value="yes" id="marketingConsent">
+              <label class="form-check-label" for="marketingConsent">I agree to receive communications from SpecCon.</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Schedule Demo</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- RESOURCES & FAQs -->
+        <section id="resources" class="section light-background">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resources &amp; FAQs</h2>
+        </div>
+        <div aria-label="FAQs">
+          <details class="mb-2">
+            <summary>Do I need to comply if I have fewer than 50 employees?</summary>
+            <p class="mb-0">Smaller employers are not designated from 1 January 2025 but can voluntarily apply for a compliance certificate if they wish to do business with the state.</p>
+          </details>
+          <details class="mb-2">
+            <summary>What’s the difference between EEA2 and EEA4?</summary>
+            <p class="mb-0">EEA2 covers employment equity data; EEA4 deals with remuneration differentials.</p>
+          </details>
+          <details>
+            <summary>How secure is my data on your platform?</summary>
+            <p class="mb-0">Data is protected through encryption and user-based permissions, and the platform aligns with POPIA requirements.</p>
+          </details>
+        </div>
+        <div class="mt-4">
+          <h3 class="h5">Articles</h3>
+          <ul class="mb-0">
+            <li><a href="#">Understanding sectoral targets: what they mean for your EE Plan</a></li>
+            <li><a href="#">EE compliance checklist for 2025 submissions</a></li>
+            <li><a href="#">Tips to streamline EEA2 and EEA4 reporting</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-label="Site footer">
+    <p>&copy; SpecCon / TAP Business</p>
+  </footer>
+
+  <!-- Dewi vendor JS (no extra template content) -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /* EEA deadlines: force progress bar + dots to dark blue */
+  #eea-deadlines #eeaDeadlineProgress { background-color: #273d4e !important; }
+  #eea-deadlines .timeline-dot { background-color: #273d4e !important; }
+</style>
