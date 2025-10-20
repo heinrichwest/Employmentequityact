@@ -8,6 +8,9 @@
   <!-- Use the same assets as your site -->
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Page-scoped styles (aligned with your previous sections) -->
@@ -20,7 +23,7 @@
       margin: 0 0 .25rem 0;
       letter-spacing: .06em;
       text-transform: uppercase;
-      color: var(--bs-emphasis-color, #0f172a);
+      color: var(--heading-color);
       display: inline-flex; align-items: center;
     }
     .section-title h2::after{
@@ -29,15 +32,10 @@
     }
 
     /* Reusable UI bits */
-    .chip{
-      display:inline-block; padding:.35rem .6rem; border-radius:999px; font-weight:600;
-      background:rgba(var(--bs-primary-rgb), .1); color:var(--bs-primary);
-      border:1px solid rgba(var(--bs-primary-rgb), .2);
-    }
     .icon-pill{
       width:44px;height:44px;flex:0 0 44px; display:inline-flex;align-items:center;justify-content:center;
-      border-radius:999px; background:rgba(var(--bs-primary-rgb), .12);
-      color:var(--bs-primary); border:1px solid rgba(var(--bs-primary-rgb), .25); font-size:1.2rem;
+      border-radius:999px; background:color-mix(in srgb, #12265e 10%, white);
+      color:#12265e; border:1px solid color-mix(in srgb, #12265e 24%, transparent); font-size:1.2rem;
     }
     @media (prefers-reduced-motion:no-preference){
       .card.raise{ transition: transform .2s ease, box-shadow .2s ease; }
@@ -46,9 +44,71 @@
 
     /* Table polish */
     .score-table .table th, .score-table .table td { vertical-align: middle; }
+
+    /* Header styling */
+    #header {
+      background-color: #12265E !important;
+    }
+
+    #header .navmenu ul li a {
+      color: #ffffff !important;
+    }
+
+    #header .navmenu ul li a:hover,
+    #header .navmenu ul li a.active {
+      color: #f0f0f0 !important;
+    }
+
+    /* Spacer between header and content */
+    #main {
+      padding-top: 100px;
+    }
+
+    /* Footer styling */
+    #footer {
+      background-color: #12265E !important;
+    }
+
+    #footer,
+    #footer p,
+    #footer a,
+    #footer h3,
+    #footer h4,
+    #footer .footer-links li,
+    #footer .footer-links a,
+    #footer .copyright,
+    #footer .credits {
+      color: #ffffff !important;
+    }
+
+    #footer a:hover {
+      color: #f0f0f0 !important;
+    }
   </style>
 </head>
 <body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="SpecCon / TAP Business"  style="height: 80px; width: 80px; object-fit: contain;">
+        <span class="visually-hidden">SpecCon / TAP Business</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#why-comply">Why Comply?</a></li>
+          <li><a href="index.html#ee-platform">Our Solution</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#demo">Book a Demo</a></li>
+          <li><a href="index.html#resources-faqs">Resources</a></li>
+          <li><a href="https://app.tap.co.za" rel="noopener">Login</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
 
 <main id="main">
 
@@ -58,21 +118,21 @@
       <div class="row align-items-center g-4">
         <div class="col-lg-9">
           <div class="section-title">
-            <h2>Employment Equity &amp; your B-BBEE score</h2>
+            <h2>Where individuals and companies grow together.</h2>
           </div>
           <p class="lead mb-2">
-            Employment Equity (EE) compliance and Broad-Based Black Economic Empowerment (B-BBEE) are closely linked. EE builds the representative workforce the B-BBEE scorecard measures&mdash;especially under <strong>Management Control</strong>&mdash;and credible EE compliance is often required during verification.
+            Employment Equity compliance proves your commitment to balanced leadership teams&mdash;the foundation of the B-BBEE scorecard. It shows auditors and partners that transformation is active, intentional, and sustainable.
           </p>
           <p class="mb-4">
-            Below we unpack how EE affects your B-BBEE score, what evidence is typically required, and practical steps to lift both compliance and points.
+            Below we unpack how Employment Equity unlocks B-BBEE impact, the evidence verifiers expect, and practical steps to lift compliance and points together.
           </p>
 
           <div class="d-flex flex-wrap gap-2">
-            <a href="index.html#eea-deadlines" class="btn btn-primary">
-              <i class="bi bi-calendar2-week me-1" aria-hidden="true"></i> Reporting deadlines
+            <a href="index.html#ee-platform" class="btn btn-primary">
+              <i class="bi bi-people me-1" aria-hidden="true"></i> Invest in your people
             </a>
             <a href="penalties.html" class="btn btn-outline-primary">
-              <i class="bi bi-exclamation-octagon me-1" aria-hidden="true"></i> Penalties for non-compliance
+              <i class="bi bi-exclamation-octagon me-1" aria-hidden="true"></i> Understand penalties
             </a>
           </div>
         </div>
@@ -84,7 +144,7 @@
   <section class="section light-background">
     <div class="container">
       <div class="section-title">
-        <h2>How EE and B-BBEE connect</h2>
+        <h2>How Employment Equity powers your B-BBEE results</h2>
       </div>
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">

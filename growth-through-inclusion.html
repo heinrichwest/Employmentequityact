@@ -8,6 +8,9 @@
   <!-- Use the same assets as your site -->
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Page-scoped styles (aligned with your prior sections) -->
@@ -20,7 +23,7 @@
       margin: 0 0 .25rem 0;
       letter-spacing: .06em;
       text-transform: uppercase;
-      color: var(--bs-emphasis-color, #0f172a);
+      color: var(--heading-color);
       display: inline-flex; align-items: center;
     }
     .section-title h2::after{
@@ -32,24 +35,85 @@
 
     /* Reusable UI bits */
     .chip{
-      display:inline-block; padding:.35rem .6rem; border-radius:999px;
-      font-weight:600; background:rgba(var(--bs-primary-rgb), .1);
-      color:var(--bs-primary); border:1px solid rgba(var(--bs-primary-rgb), .2);
+      display:inline-flex; align-items:center; gap:.35rem; padding:.35rem .85rem; border-radius:999px;
+      font-weight:500; font-size:.85rem; letter-spacing:.02em; text-transform:uppercase;
+      background:color-mix(in srgb, #12265e 8%, white); color:#12265e;
+      border:1px solid color-mix(in srgb, #12265e 18%, transparent);
     }
     .icon-pill{
-      width:44px;height:44px;flex:0 0 44px;
-      display:inline-flex;align-items:center;justify-content:center;
-      border-radius:999px;background:rgba(var(--bs-primary-rgb), .12);
-      color:var(--bs-primary);border:1px solid rgba(var(--bs-primary-rgb), .25);
-      font-size:1.2rem;
+      width:44px;height:44px;flex:0 0 44px; display:inline-flex;align-items:center;justify-content:center;
+      border-radius:999px; background:color-mix(in srgb, #12265e 10%, white);
+      color:#12265e; border:1px solid color-mix(in srgb, #12265e 24%, transparent); font-size:1.2rem;
     }
     @media (prefers-reduced-motion:no-preference){
       .card.raise{ transition: transform .2s ease, box-shadow .2s ease; }
       .card.raise:hover{ transform: translateY(-2px); box-shadow:0 .75rem 1.25rem rgba(0,0,0,.06); }
     }
+
+    /* Header styling */
+    #header {
+      background-color: #12265E !important;
+    }
+
+    #header .navmenu ul li a {
+      color: #ffffff !important;
+    }
+
+    #header .navmenu ul li a:hover,
+    #header .navmenu ul li a.active {
+      color: #f0f0f0 !important;
+    }
+
+    /* Spacer between header and content */
+    #main {
+      padding-top: 100px;
+    }
+
+    /* Footer styling */
+    #footer {
+      background-color: #12265E !important;
+    }
+
+    #footer,
+    #footer p,
+    #footer a,
+    #footer h3,
+    #footer h4,
+    #footer .footer-links li,
+    #footer .footer-links a,
+    #footer .copyright,
+    #footer .credits {
+      color: #ffffff !important;
+    }
+
+    #footer a:hover {
+      color: #f0f0f0 !important;
+    }
   </style>
 </head>
 <body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="SpecCon / TAP Business"  style="height: 80px; width: 80px; object-fit: contain;">
+        <span class="visually-hidden">SpecCon / TAP Business</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#why-comply">Why Comply?</a></li>
+          <li><a href="index.html#ee-platform">Our Solution</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#demo">Book a Demo</a></li>
+          <li><a href="index.html#resources-faqs">Resources</a></li>
+          <li><a href="https://app.tap.co.za" rel="noopener">Login</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
 
 <main id="main">
 
@@ -59,14 +123,24 @@
       <div class="row align-items-center g-4">
         <div class="col-lg-10">
           <div class="section-title">
-            <h2>The value of a diverse workforce</h2>
+            <h2>An ecosystem designed for people &mdash; and built for tomorrow.</h2>
           </div>
+
           <p class="lead mb-2">
-            Diversity brings different perspectives, experiences and problem-solving styles into the room. When paired with inclusive ways of working, it fuels innovation, better decisions and stronger relationships with customers and communities.
+            Inclusive, future-ready teams power innovation and resilience. Employment Equity turns diversity into daily practice that reflects South Africa's heartbeat.
           </p>
           <p class="mb-0">
-            The Employment Equity Act sets the legal foundation. Going beyond compliance turns diversity into a lasting business advantage.
+            SpecCon equips your leaders with insight, coaching, and reporting so inclusive cultures flourish and every person sees a future with you.
           </p>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <a href="index.html#ee-platform" class="btn btn-primary">
+              <i class="bi bi-people me-1" aria-hidden="true"></i> Invest in your people
+            </a>
+            <a href="https://forms.office.com/r/wh5S70dFS6" class="btn btn-outline-primary" target="_blank" rel="noopener">
+              <i class="bi bi-arrow-up-right-circle me-1" aria-hidden="true"></i> Partner with SpecCon
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -12,43 +12,47 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Inter",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --nav-font: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --accent-serif-font: "Times New Roman", Times, serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff4a17; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #1f2d4a; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #12265e; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ffa600; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --support-color: #92abc4; /* Supporting color drawn from the brand palette for subtle backgrounds and accents. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #e5eaee;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ff4a17; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffa600; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ff4a17; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #12265e; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffa600; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f1f4fa;
+  --background-color: color-mix(in srgb, var(--support-color) 20%, white);
   --surface-color: #ffffff;
+  --default-color: #1f2d4a;
+  --heading-color: #12265e;
 }
 
 .dark-background {
-  --background-color: #000910;
+  --background-color: #12265e;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #28323a;
+  --surface-color: color-mix(in srgb, #12265e 80%, black);
   --contrast-color: #ffffff;
 }
 
@@ -64,6 +68,10 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+}
+
+.font-serif-accent {
+  font-family: var(--accent-serif-font);
 }
 
 a {
@@ -287,7 +295,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(21, 34, 43, 0.85);
+  --background-color: rgba(18, 38, 94, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -807,7 +815,7 @@ h6 {
 
 .page-title:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: linear-gradient(115deg, rgba(18, 38, 94, 0.6) 0%, rgba(146, 171, 196, 0.32) 48%, rgba(255, 255, 255, 0.18) 100%);
   position: absolute;
   inset: 0;
 }
@@ -929,7 +937,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: linear-gradient(135deg, rgba(18, 38, 94, 0.65) 0%, rgba(146, 171, 196, 0.3) 55%, rgba(255, 255, 255, 0.15) 100%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -951,23 +959,6 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 10px 0 0 0;
   font-size: 24px;
-}
-
-.hero .btn-get-started {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 4px;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
-
-.hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .hero .btn-watch-video {
@@ -992,6 +983,30 @@ section,
 
 .hero .btn-watch-video:hover i {
   color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 24px 48px rgba(18, 38, 94, 0.18);
+  background: color-mix(in srgb, var(--support-color) 30%, white);
+}
+
+.media-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(140deg, rgba(18, 38, 94, 0.35) 0%, rgba(146, 171, 196, 0.25) 60%, rgba(255, 255, 255, 0.18) 100%);
+  pointer-events: none;
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
 }
 
 @media (max-width: 768px) {
@@ -1847,30 +1862,78 @@ section,
 
 
 /* Brand button overrides (Bootstrap 5) */
-.btn-primary {
-  --bs-btn-bg: #ff4a17;
-  --bs-btn-border-color: #ff4a17;
-  --bs-btn-hover-bg: #e04315;
-  --bs-btn-hover-border-color: #e04315;
-  --bs-btn-active-bg: #c83c13;
-  --bs-btn-active-border-color: #c83c13;
+.btn {
+  font-family: var(--default-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  padding: 0.65rem 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.btn-outline-primary {
-  --bs-btn-color: #ff4a17;
-  --bs-btn-border-color: #ff4a17;
-  --bs-btn-hover-bg: #ff4a17;
-  --bs-btn-hover-border-color: #ff4a17;
+
+.btn-sm {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color) 35%, transparent);
+  outline: none;
+}
+
+.btn-primary {
+  --bs-btn-color: #12265e;
+  --bs-btn-bg: var(--accent-color);
+  --bs-btn-border-color: var(--accent-color);
   --bs-btn-hover-color: #ffffff;
-  --bs-btn-active-bg: #e04315;
-  --bs-btn-active-border-color: #e04315;
+  --bs-btn-hover-bg: color-mix(in srgb, var(--accent-color) 88%, #cc7b00);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--accent-color) 88%, #cc7b00);
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: color-mix(in srgb, var(--accent-color) 80%, #b16900);
+  --bs-btn-active-border-color: color-mix(in srgb, var(--accent-color) 80%, #b16900);
+  --bs-btn-disabled-color: #12265e;
+  --bs-btn-disabled-bg: color-mix(in srgb, var(--accent-color) 40%, white);
+  --bs-btn-disabled-border-color: color-mix(in srgb, var(--accent-color) 40%, white);
+  box-shadow: 0 12px 24px rgba(255, 166, 0, 0.22);
+}
+
+.btn-primary.btn-on-dark,
+.hero .btn-get-started {
+  --bs-btn-color: #ffffff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(255, 166, 0, 0.28);
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(18, 38, 94, 0.22);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #12265e;
+  --bs-btn-border-color: #12265e;
+  --bs-btn-hover-bg: #12265e;
+  --bs-btn-hover-border-color: #12265e;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-bg: color-mix(in srgb, #12265e 85%, black);
+  --bs-btn-active-border-color: color-mix(in srgb, #12265e 85%, black);
   --bs-btn-active-color: #ffffff;
 }
+
+.btn-primary {
+}
 /* Brand primary color overrides for badges and related utility classes */
-:root { --bs-primary: #ff4a17; --bs-primary-rgb: 255, 74, 23; }
-.badge.text-bg-primary { background-color: #ff4a17 !important; color: #ffffff !important; }
-.text-bg-primary { background-color: #ff4a17 !important; color: #ffffff !important; }
-.bg-primary { background-color: #ff4a17 !important; }
-.border-primary { border-color: #ff4a17 !important; }
+:root { --bs-primary: #ffa600; --bs-primary-rgb: 255, 166, 0; }
+.badge.text-bg-primary { background-color: var(--accent-color) !important; color: #ffffff !important; }
+.text-bg-primary { background-color: var(--accent-color) !important; color: #ffffff !important; }
+.bg-primary { background-color: var(--accent-color) !important; }
+.border-primary { border-color: var(--accent-color) !important; }
 /* Section titles — improved h2 */
 .section-title h2{
   /* Size scales from ~28px → ~40px */
@@ -1880,7 +1943,7 @@ section,
   margin: 0 0 .25rem 0;          /* some breathing room */
   letter-spacing: .06em;         /* subtler tracking than 1.5px */
   text-transform: uppercase;     /* keep your style; remove if you prefer normal case */
-  color: var(--bs-emphasis-color, #0f172a);
+  color: var(--bs-emphasis-color, var(--heading-color));
   display: inline-flex;          /* needed for the rule alignment */
   align-items: center;
 }
@@ -1891,7 +1954,7 @@ section,
   display: inline-block;
   width: clamp(80px, 14vw, 180px);   /* responsive line length */
   height: 3px;
-  background: var(--bs-primary, #ff6a3d);
+  background: var(--bs-primary, var(--accent-color));
   border-radius: 999px;
   margin-left: .75rem;
   transform: translateY(1px);        /* align visually with text baseline */
@@ -1905,4 +1968,61 @@ section,
 /* Optional: compact variant (use on very short titles) */
 .section-title.is-compact h2{
   font-size: clamp(1.5rem, 1rem + 1.5vw, 2.125rem);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, #12265e 8%, white);
+  color: #12265e;
+  border: 1px solid color-mix(in srgb, #12265e 18%, transparent);
+}
+
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+}
+
+.badge.text-bg-primary {
+  background-color: var(--accent-color) !important;
+  color: #12265e !important;
+}
+
+.badge.text-bg-primary.is-on-dark {
+  color: #ffffff !important;
+}
+
+.form-control,
+.form-select,
+.form-control:focus,
+.form-select:focus {
+  border-radius: 14px;
+  border-color: color-mix(in srgb, #12265e 12%, rgba(18, 38, 94, 0));
+  padding: 0.75rem 1rem;
+  box-shadow: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color) 22%, transparent);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color) 20%, transparent);
+  border-color: var(--accent-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }

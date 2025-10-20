@@ -8,21 +8,86 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* Header styling */
+    #header {
+      background-color: #12265E !important;
+    }
+
+    #header .navmenu ul li a {
+      color: #ffffff !important;
+    }
+
+    #header .navmenu ul li a:hover,
+    #header .navmenu ul li a.active {
+      color: #f0f0f0 !important;
+    }
+
+    /* Spacer between header and content */
+    #main {
+      padding-top: 100px;
+    }
+
+    /* Footer styling */
+    #footer {
+      background-color: #12265E !important;
+    }
+
+    #footer,
+    #footer p,
+    #footer a,
+    #footer h3,
+    #footer h4,
+    #footer .footer-links li,
+    #footer .footer-links a,
+    #footer .copyright,
+    #footer .credits {
+      color: #ffffff !important;
+    }
+
+    #footer a:hover {
+      color: #f0f0f0 !important;
+    }
+  </style>
 </head>
-<body><main id="main">
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="SpecCon / TAP Business"  style="height: 80px; width: 80px; object-fit: contain;">
+        <span class="visually-hidden">SpecCon / TAP Business</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#why-comply">Why Comply?</a></li>
+          <li><a href="index.html#ee-platform">Our Solution</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#demo">Book a Demo</a></li>
+          <li><a href="index.html#resources-faqs">Resources</a></li>
+          <li><a href="https://app.tap.co.za" rel="noopener">Login</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+<main id="main">
   <!-- PENALTIES TABLE -->
   <section class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Penalties for Non-Compliance</h2>
-        <p class="mb-0">Applicable to the listed sections of the Employment Equity Act.</p>
+        <h2>Stay ahead of Employment Equity penalties</h2>
+        <p class="mb-0">Use this table to understand the maximum fines per section of the Employment Equity Act so you can plan remediating action before penalties apply.</p>
       </div>
 
       <div class="table-responsive rounded-4 shadow-sm border">

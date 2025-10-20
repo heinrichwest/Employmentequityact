@@ -203,7 +203,32 @@
       }
     })
   }
-  window.addEventListener('load', navmenuScrollspy);
+    window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  const brochureDownloadLink = document.querySelector('#download-brochure');
+  if (brochureDownloadLink) {
+    brochureDownloadLink.addEventListener('click', async (event) => {
+      event.preventDefault();
+      const fileUrl = brochureDownloadLink.href;
+      try {
+        const response = await fetch(fileUrl);
+        if (!response.ok) {
+          throw new Error('Failed to fetch brochure');
+        }
+        const blob = await response.blob();
+        const objectUrl = URL.createObjectURL(blob);
+        const tempLink = document.createElement('a');
+        tempLink.href = objectUrl;
+        tempLink.download = brochureDownloadLink.getAttribute('download') || fileUrl.split('/').pop();
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        tempLink.remove();
+        URL.revokeObjectURL(objectUrl);
+      } catch (error) {
+        window.location.href = fileUrl;
+      }
+    });
+  }
 
 })();
