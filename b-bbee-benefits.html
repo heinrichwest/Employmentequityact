@@ -59,9 +59,9 @@
         align-items: center;
         justify-content: center;
         border-radius: 999px;
-        background: color-mix(in srgb, #12265e 10%, white);
-        color: #12265e;
-        border: 1px solid color-mix(in srgb, #12265e 24%, transparent);
+        background: color-mix(in srgb, #12265E 10%, white);
+        color: #12265E;
+        border: 1px solid color-mix(in srgb, #12265E 24%, transparent);
         font-size: 1.2rem;
       }
       @media (prefers-reduced-motion: no-preference) {
@@ -84,16 +84,37 @@
 
       /* Header styling */
       #header {
-        background-color: #12265e !important;
+        background-color: #12265E !important;
       }
 
       #header .navmenu ul li a {
-        color: #ffffff !important;
+        color: #FFFFFF !important;
       }
 
       #header .navmenu ul li a:hover,
       #header .navmenu ul li a.active {
-        color: #f0f0f0 !important;
+        color: #92ABC4 !important;
+      }
+
+      /* Mobile menu dropdown styling */
+      @media (max-width: 1199px) {
+        .mobile-nav-active .navmenu {
+          background: rgba(18, 38, 94, 0.95) !important;
+        }
+
+        .navmenu .dropdown ul {
+          background-color: rgba(255, 255, 255, 0.95) !important;
+          border-radius: 8px;
+        }
+
+        .navmenu .dropdown ul a {
+          color: #12265E !important;
+        }
+
+        .navmenu .dropdown ul a:hover {
+          color: #FFA600 !important;
+          background-color: rgba(255, 166, 0, 0.1) !important;
+        }
       }
 
       /* Spacer between header and content */
@@ -103,7 +124,7 @@
 
       /* Footer styling */
       #footer {
-        background-color: #12265e !important;
+        background-color: #12265E !important;
       }
 
       #footer,
@@ -115,11 +136,11 @@
       #footer .footer-links a,
       #footer .copyright,
       #footer .credits {
-        color: #ffffff !important;
+        color: #FFFFFF !important;
       }
 
       #footer a:hover {
-        color: #f0f0f0 !important;
+        color: #92ABC4 !important;
       }
     </style>
   </head>
@@ -134,7 +155,6 @@
             alt="SpecCon / TAP Business"
             style="height: 80px; width: 80px; object-fit: contain"
           />
-          <span class="visually-hidden">SpecCon / TAP Business</span>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -640,8 +660,316 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-about">
+                <a href="index.html" class="logo d-flex align-items-center mb-3">
+                  <img
+                    src="assets/img/logo.png"
+                    alt="SpecCon / TAP Business"
+                    style="height: 60px; width: 60px; object-fit: contain"
+                  />
+                  <span class="ms-2">SpecCon / TAP Business</span>
+                </a>
+                <p class="mb-3">
+                  Empowering South African businesses with comprehensive Employment
+                  Equity compliance solutions. Transform compliance into opportunity.
+                </p>
+                <div class="social-links d-flex gap-2">
+                  <a href="https://www.facebook.com/speccononlinetraining/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/speccon-pty-ltd/posts/?feedView=all" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+              <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#home"><i class="bi bi-chevron-right"></i> Home</a></li>
+                  <li><a href="#why-comply"><i class="bi bi-chevron-right"></i> Why Comply?</a></li>
+                  <li><a href="#ee-platform"><i class="bi bi-chevron-right"></i> Our Solution</a></li>
+                  <li><a href="#pricing"><i class="bi bi-chevron-right"></i> Pricing</a></li>
+                  <li><a href="#demo"><i class="bi bi-chevron-right"></i> Book Demo</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Resources -->
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-links">
+                <h4>Resources</h4>
+                <ul class="list-unstyled">
+                  <li><a href="legal-obligation.html"><i class="bi bi-chevron-right"></i> Legal Obligations</a></li>
+                  <li><a href="b-bbee-benefits.html"><i class="bi bi-chevron-right"></i> B-BBEE Benefits</a></li>
+                  <li><a href="penalties.html"><i class="bi bi-chevron-right"></i> Penalties</a></li>
+                  <li><a href="growth-through-inclusion.html"><i class="bi bi-chevron-right"></i> Growth & Inclusion</a></li>
+                  <li><a href="#resources-faqs"><i class="bi bi-chevron-right"></i> FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p class="mb-3">
+                  <strong>Head Office:</strong><br>
+                  Suite W003 & W004,<br>
+                  Midlands Office Park West<br>
+                  1 Mount Quray Street,<br>
+                  Midstream, 1692
+                </p>
+                <p class="mb-3">
+                  <strong>Email:</strong><br>
+                  <a href="mailto:help@speccon.co.za">help@speccon.co.za</a>
+                </p>
+                <p class="mb-0">
+                  <strong>Platform:</strong><br>
+                  <a href="https://app.tap.co.za" target="_blank" rel="noopener">app.tap.co.za</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 text-center">
+              <p class="mb-0">
+                &copy; <span class="current-year"></span> <strong>SpecCon / TAP Business</strong>. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Footer Styles -->
+    <style>
+      #footer {
+        background: linear-gradient(135deg, #12265E 0%, #0d1940 100%);
+        color: #FFFFFF;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #FFA600 0%, #ff8800 50%, #FFA600 100%);
+      }
+
+      .footer-top {
+        padding: 60px 0 40px;
+        position: relative;
+      }
+
+      .footer-about .logo span {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FFFFFF !important;
+      }
+
+      .footer-about p {
+        color: #92ABC4;
+        line-height: 1.7;
+      }
+
+      .social-links .social-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 166, 0, 0.1);
+        border: 2px solid rgba(255, 166, 0, 0.3);
+        color: #FFA600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+      }
+
+      .social-links .social-link:hover {
+        background: #FFA600;
+        color: #12265E;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(255, 166, 0, 0.4);
+      }
+
+      .footer-links h4,
+      .footer-contact h4 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+      }
+
+      .footer-links h4::after,
+      .footer-contact h4::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 2px;
+        background: #FFA600;
+      }
+
+      .footer-links ul li {
+        margin-bottom: 0.75rem;
+      }
+
+      .footer-links ul li a {
+        color: #92ABC4;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .footer-links ul li a i {
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .footer-links ul li a:hover {
+        color: #FFA600;
+        padding-left: 5px;
+      }
+
+      .footer-links ul li a:hover i {
+        transform: translateX(3px);
+      }
+
+      .footer-contact p {
+        color: #FFFFFF;
+        line-height: 1.8;
+      }
+
+      .footer-contact strong {
+        color: #FFFFFF;
+      }
+
+      .footer-contact a {
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .footer-contact a:hover {
+        color: #FFA600;
+      }
+
+      .footer-bottom {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 20px 0;
+        border-top: 1px solid rgba(146, 171, 196, 0.1);
+      }
+
+      .footer-bottom p {
+        color: #92ABC4;
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom strong {
+        color: #FFFFFF;
+      }
+
+      .footer-bottom .credits {
+        color: #92ABC4;
+      }
+
+      .scroll-top {
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 20px;
+        bottom: 20px;
+        z-index: 996;
+        background: #FFA600;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        transition: all 0.4s;
+        box-shadow: 0 4px 12px rgba(255, 166, 0, 0.3);
+      }
+
+      .scroll-top i {
+        font-size: 24px;
+        color: #12265E;
+        line-height: 0;
+        font-weight: bold;
+      }
+
+      .scroll-top:hover {
+        background: #ff8800;
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(255, 166, 0, 0.5);
+      }
+
+      .scroll-top.active {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        .footer-top {
+          padding: 40px 0 30px;
+        }
+
+        .footer-about .logo span {
+          font-size: 1.25rem;
+        }
+
+        .footer-bottom .col-md-6 {
+          margin-bottom: 1rem;
+        }
+
+        .footer-bottom .col-md-6:last-child {
+          margin-bottom: 0;
+        }
+      }
+    </style>
+
+    <!-- Auto-update year script -->
+    <script>
+      const yearElement = document.querySelector('.current-year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+    </script>
+
     <!-- Vendor JS -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
