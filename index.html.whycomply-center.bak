@@ -116,19 +116,19 @@
         </div>
       </div>
 
-      <!-- 2. B-BBEE points -->
+      <!-- 2. EE points -->
       <div class="col">
         <div class="card h-100 border-0 shadow-sm rounded-4">
           <div class="card-body p-4">
             <div class="d-flex align-items-center justify-content-between">
-              <h3 class="h5 mb-0">B-BBEE benefits</h3>
+              <h3 class="h5 mb-0">EE benefits</h3>
               <i class="bi bi-award display-6 text-primary" aria-hidden="true"></i>
             </div>
             <div class="mt-2 mb-3">
               <span class="chip">Scorecard</span>
             </div>
             <p class="mb-0 text-muted">
-              Designated Employers require Employment Equity compliance in order to obtain B-BBEE points under certain elements.
+              Designated Employers require Employment Equity compliance in order to obtain EE points under certain elements.
             </p>
           </div>
         </div>

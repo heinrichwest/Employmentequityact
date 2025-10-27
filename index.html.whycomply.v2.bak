@@ -114,16 +114,16 @@
         </div>
       </div>
 
-      <!-- 2. B-BBEE points -->
+      <!-- 2. EE points -->
       <div class="col">
         <div class="card h-100 border-0 shadow-sm rounded-4 reason-card">
           <div class="card-body p-4">
             <div class="d-flex align-items-start gap-3">
               <span class="icon-pill"><i class="bi bi-award" aria-hidden="true"></i></span>
               <div>
-                <h3 class="h5 mb-1">B-BBEE benefits</h3>
+                <h3 class="h5 mb-1">EE benefits</h3>
                 <p class="text-muted mb-0">
-                  EE compliance contributes to B-BBEE points under certain elements.
+                  EE compliance contributes to EE points under certain elements.
                 </p>
               </div>
             </div>
