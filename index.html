@@ -1273,19 +1273,17 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <label for="demoCompany" class="form-label"
-                      >Company Name*</label
-                    >
+                    <label for="demoSurname" class="form-label">Surname*</label>
                     <input
                       type="text"
-                      id="demoCompany"
-                      name="company"
+                      id="demoSurname"
+                      name="surname"
                       class="form-control"
                       required
-                      autocomplete="organization"
+                      autocomplete="family-name"
                     />
                     <div class="invalid-feedback">
-                      Please provide your company name.
+                      Please tell us your surname.
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -1300,6 +1298,36 @@
                     />
                     <div class="invalid-feedback">
                       Please provide a valid email address.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="demoPhone" class="form-label">Phone Number*</label>
+                    <input
+                      type="tel"
+                      id="demoPhone"
+                      name="phone"
+                      class="form-control"
+                      required
+                      autocomplete="tel"
+                    />
+                    <div class="invalid-feedback">
+                      Please provide your phone number.
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="demoCompany" class="form-label"
+                      >Company Name*</label
+                    >
+                    <input
+                      type="text"
+                      id="demoCompany"
+                      name="company"
+                      class="form-control"
+                      required
+                      autocomplete="organization"
+                    />
+                    <div class="invalid-feedback">
+                      Please provide your company name.
                     </div>
                   </div>
                   <div class="col-12">
@@ -2382,16 +2410,24 @@
 
           const formData = new FormData(form);
 
-          // Build the request payload according to the API specification
-          const payload = {
+          // Build the request payload matching the bookkeeper form structure
+          const enquiryData = {
             Name: formData.get('firstName') || '',
-            CompanyName: formData.get('company') || '',
-            JobTitle: '',
+            Surname: formData.get('surname') || '',
             Email: formData.get('email') || '',
+            MobileNumber: formData.get('phone') || '',
+            JobTitle: '',
+            CompanyName: formData.get('company') || '',
             NumEmployees: 0,
+            Course: 'Employment Equity Act Compliance',
+            NumAttendees: 0,
+            Location: '',
             Reason: formData.get('reason') || '',
-            source: "employmentequityact"
+            Source: 'employmentequityact'
           };
+
+          // Save to localStorage for reference
+          localStorage.setItem('lastEnquiryData', JSON.stringify(enquiryData));
 
           try {
             const response = await fetch(endpoint, {
@@ -2400,25 +2436,25 @@
                 "Content-Type": "application/json",
                 Accept: "application/json",
               },
-              body: JSON.stringify(payload),
+              body: JSON.stringify(enquiryData),
             });
 
-            if (!response.ok) {
-              throw new Error(`Request failed with status ${response.status}`);
+            if (response.ok) {
+              statusEl.className = "alert alert-success mt-4";
+              statusEl.textContent =
+                "Thanks! Your demo request is on its way. We will be in touch shortly.";
+              statusEl.classList.remove("d-none");
+              form.reset();
+              form.classList.remove("was-validated");
+            } else {
+              const errorData = await response.json();
+              throw new Error('API Error: ' + (errorData.message || response.status));
             }
-
-            await response.json();
-
-            statusEl.className = "alert alert-success mt-4";
-            statusEl.textContent =
-              "Thanks! Your demo request is on its way. We will be in touch shortly.";
-            statusEl.classList.remove("d-none");
-            form.reset();
           } catch (error) {
             console.error("Demo request submission failed", error);
             statusEl.className = "alert alert-danger mt-4";
             statusEl.textContent =
-              "Sorry, we could not send your request. Please try again or email hermias@speccon.co.za.";
+              "Sorry, we could not send your request. Please try again or contact us directly at hermias@speccon.co.za.";
             statusEl.classList.remove("d-none");
           } finally {
             if (submitBtn) {
