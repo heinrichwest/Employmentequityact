@@ -1,0 +1,266 @@
+/*
+ * Employment Equity Act - Custom Styles
+ * Author: SpecCon / TAP Business
+ * Description: Custom styling for the Employment Equity compliance website
+ */
+
+/* ========================================
+   1. GENERAL STYLES
+   ======================================== */
+
+/* Visually Hidden Elements */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Main Section Colors */
+main .section {
+  color: var(--default-color);
+}
+
+main .section h1,
+main .section h2,
+main .section h3 {
+  color: var(--heading-color);
+}
+
+/* ========================================
+   2. PRICING SECTION
+   ======================================== */
+
+.pricing .table {
+  color: var(--default-color);
+}
+
+/* ========================================
+   3. FOOTER STYLING
+   ======================================== */
+
+#footer {
+  background-color: #12265E !important;
+}
+
+#footer,
+#footer p,
+#footer a,
+#footer h3,
+#footer h4,
+#footer .footer-links li,
+#footer .footer-links a,
+#footer .copyright,
+#footer .credits {
+  color: #ffffff !important;
+}
+
+#footer a:hover {
+  color: #f0f0f0 !important;
+}
+
+/* ========================================
+   4. WHY COMPLY SECTION
+   ======================================== */
+
+/* Chip Style (mirrors the deadlines' date-chip) */
+#why-comply .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, #12265e 8%, white);
+  color: #12265e;
+  border: 1px solid color-mix(in srgb, #12265e 18%, transparent);
+}
+
+/* Hover/Raise Effect for Cards */
+@media (prefers-reduced-motion: no-preference) {
+  #why-comply .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  #why-comply .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Reason Card Styling */
+#why-comply .reason-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#why-comply .reason-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.9rem 1.4rem rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Pill */
+#why-comply .icon-pill {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(var(--bs-primary-rgb), 0.12);
+  color: var(--bs-primary);
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.25);
+  font-size: 1.2rem;
+}
+
+/* ========================================
+   5. EEA DEADLINES SECTION
+   ======================================== */
+
+/* Stronger Headings */
+#eea-deadlines .section-title h2 {
+  font-size: clamp(2.2rem, 2.2vw + 1rem, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+#eea-deadlines h3 {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+}
+
+/* Date Chip Styling */
+#eea-deadlines .date-chip {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  background: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.2);
+}
+
+/* Progress Bar and Timeline Dots - Dark Blue */
+#eea-deadlines #eeaDeadlineProgress {
+  background-color: #273d4e !important;
+}
+
+#eea-deadlines .timeline-dot {
+  background-color: #273d4e !important;
+}
+
+/* Icons - Dark Blue */
+#eea-deadlines .text-primary {
+  color: #273d4e !important;
+}
+
+/* ========================================
+   6. EE PLATFORM SECTION
+   ======================================== */
+
+#ee-platform .letter-spacing-1 {
+  letter-spacing: 0.08em;
+}
+
+#ee-platform .feature-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+#ee-platform .feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.9rem 1.4rem rgba(0, 0, 0, 0.08);
+}
+
+#ee-platform .icon-pill {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(var(--bs-primary-rgb), 0.12);
+  color: var(--bs-primary);
+  border: 1px solid rgba(var(--bs-primary-rgb), 0.25);
+  font-size: 1.2rem;
+}
+
+#ee-platform .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, #12265e 8%, white);
+  color: #12265e;
+  border: 1px solid color-mix(in srgb, #12265e 18%, transparent);
+}
+
+@media (min-width: 992px) {
+  #ee-platform .section-title h2 {
+    max-width: 900px;
+  }
+}
+
+/* ========================================
+   7. SECTION TITLE STYLING
+   ======================================== */
+
+/* Increase Section Subtitles to 28px */
+#eea-deadlines .section-title p.mb-0,
+#ee-platform .section-title p.mb-0,
+#pricing .section-title p,
+#demo .section-title p {
+  font-size: 28px;
+}
+
+#eea-sections .section-title p.mb-0 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Keep EE Platform Title Responsive */
+#ee-platform .section-title h2 {
+  white-space: normal;
+}
+
+@media (max-width: 576px) {
+  #ee-platform .section-title h2 {
+    font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  }
+}
+
+/* ========================================
+   8. RESOURCES & FAQS SECTION
+   ======================================== */
+
+#resources-faqs .accordion-item {
+  border: 0;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.03);
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+}
+
+#resources-faqs .accordion-button {
+  font-weight: 600;
+}
+
+#resources-faqs .accordion-button:not(.collapsed) {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+#resources-faqs .accordion-button:focus {
+  box-shadow: none;
+}
+
+#resources-faqs .accordion-body {
+  padding-top: 0.5rem;
+}
