@@ -1256,30 +1256,20 @@
                 id="demoRequestForm"
                 class="needs-validation"
                 novalidate
-                action="https://formsubmit.co/hermias@speccon.co.za"
-                method="POST"
               >
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="SpecCon EE demo request"
-                />
-                <input type="hidden" name="_template" value="table" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="source" value="employmentequityact" />
                 <div class="row gy-3">
                   <div class="col-md-6">
-                    <label for="demoName" class="form-label">Name*</label>
+                    <label for="demoName" class="form-label">First Name*</label>
                     <input
                       type="text"
                       id="demoName"
-                      name="name"
+                      name="firstName"
                       class="form-control"
                       required
-                      autocomplete="name"
+                      autocomplete="given-name"
                     />
                     <div class="invalid-feedback">
-                      Please tell us who you are.
+                      Please tell us your first name.
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -1299,20 +1289,6 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <label for="demoJobTitle" class="form-label"
-                      >Job Title*</label
-                    >
-                    <input
-                      type="text"
-                      id="demoJobTitle"
-                      name="job_title"
-                      class="form-control"
-                      required
-                      autocomplete="organization-title"
-                    />
-                    <div class="invalid-feedback">Please enter your role.</div>
-                  </div>
-                  <div class="col-md-6">
                     <label for="demoEmail" class="form-label">Email*</label>
                     <input
                       type="email"
@@ -1326,33 +1302,13 @@
                       Please provide a valid email address.
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <label for="demoEmployees" class="form-label"
-                      >Number of Employees*</label
-                    >
-                    <select
-                      id="demoEmployees"
-                      name="number_of_employees"
-                      class="form-select"
-                      required
-                    >
-                      <option value="" selected disabled>Select a range</option>
-                      <option value="1-49">1 - 49</option>
-                      <option value="50-149">50 - 149</option>
-                      <option value="150-499">150 - 499</option>
-                      <option value="500+">500+</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select the size of your workforce.
-                    </div>
-                  </div>
                   <div class="col-12">
                     <label for="demoMessage" class="form-label"
-                      >Message <span class="text-muted">(Optional)</span></label
+                      >Reason for Enquiry <span class="text-muted">(Optional)</span></label
                     >
                     <textarea
                       id="demoMessage"
-                      name="message"
+                      name="reason"
                       rows="4"
                       class="form-control"
                       placeholder="Let us know about any specific focus areas or questions."
@@ -2406,7 +2362,7 @@
         const defaultText =
           submitBtn?.dataset?.defaultText || submitBtn?.textContent || "Submit";
         const submittingText = submitBtn?.dataset?.submitText || "Sending…";
-        const endpoint = "https://formsubmit.co/ajax/hermias@speccon.co.za";
+        const endpoint = "https://enquiry.speccon.co.za/api/enquiry/submit";
 
         form.addEventListener("submit", async (event) => {
           event.preventDefault();
@@ -2424,10 +2380,18 @@
             submitBtn.textContent = submittingText;
           }
 
-          const formData = Object.fromEntries(new FormData(form).entries());
-          formData._subject = "SpecCon EE demo request";
-          formData._replyto = formData.email || "";
-          formData._template = "table";
+          const formData = new FormData(form);
+
+          // Build the request payload according to the API specification
+          const payload = {
+            Name: formData.get('firstName') || '',
+            CompanyName: formData.get('company') || '',
+            JobTitle: '',
+            Email: formData.get('email') || '',
+            NumEmployees: 0,
+            Reason: formData.get('reason') || '',
+            source: "employmentequityact"
+          };
 
           try {
             const response = await fetch(endpoint, {
@@ -2436,14 +2400,13 @@
                 "Content-Type": "application/json",
                 Accept: "application/json",
               },
-              body: JSON.stringify(formData),
+              body: JSON.stringify(payload),
             });
 
             if (!response.ok) {
               throw new Error(`Request failed with status ${response.status}`);
             }
 
-            // FormSubmit returns JSON on success
             await response.json();
 
             statusEl.className = "alert alert-success mt-4";
