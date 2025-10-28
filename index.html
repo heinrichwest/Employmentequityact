@@ -12,7 +12,7 @@
 
     <link href="assets/img/favicon.png" rel="icon" />
 
-    <link href="assets/img/logo.png" rel="apple-touch-icon" />
+    <link href="assets/img/favicon.png" rel="icon" />
 
     <!-- Fonts -->
 
@@ -862,7 +862,7 @@ SpecCon is ready with every tool you need to empower with purpose.
         <div class="container">
           <div class="section-title">
             <h3 class="mt-2">
-              Experts in employment Equity Purpose and Efficiency: We know the way.
+              Experts in Employment Equity Purpose and Efficiency: We know the way.
             </h3>
 
             <h3 class="mb-0">
@@ -1037,6 +1037,11 @@ SpecCon is ready with every tool you need to empower with purpose.
                   <div class="row align-items-center g-4">
                     <div class="col-md-4 text-center">
                       <img src="assets/img/Stephanie.jpeg" alt="Stephanie - EE Specialist" class="img-fluid rounded-circle" style="max-width: 250px; border: 5px solid #FFA600;">
+                      <div class="mt-3">
+                        <a href="mailto:stephanie@speccon.co.za" class="text-white stephanie-email-link" style="font-size: 1.1rem; text-decoration: none; transition: color 0.3s ease;">
+                          <i class="bi bi-envelope-fill me-2"></i>stephanie@speccon.co.za
+                        </a>
+                      </div>
                     </div>
                     <div class="col-md-8">
                       <h3 class="mb-3" style="color: #FFA600;">Meet Stephanie: Your experienced EE Specialist</h3>
@@ -1116,6 +1121,10 @@ SpecCon is ready with every tool you need to empower with purpose.
           background: color-mix(in srgb, #12265e 8%, white);
           color: #12265e;
           border: 1px solid color-mix(in srgb, #12265e 18%, transparent);
+        }
+
+        .stephanie-email-link:hover {
+          color: #FFA600 !important;
         }
       </style>
 
@@ -1320,9 +1329,27 @@ SpecCon is ready with every tool you need to empower with purpose.
                       Please provide your phone number.
                     </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-6">
+                    <label for="demoEmployees" class="form-label">Number of Employees*</label>
+                    <select
+                      id="demoEmployees"
+                      name="employees"
+                      class="form-select"
+                      required
+                    >
+                      <option value="" selected disabled>Select number of employees</option>
+                      <option value="1-5">1-5 employees</option>
+                      <option value="6-10">6-10 employees</option>
+                      <option value="11-20">11-20 employees</option>
+                      <option value="20+">More than 20 employees</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select the number of employees.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
                     <label for="demoCompany" class="form-label"
-                      >Company Name*</label
+                      >School Name*</label
                     >
                     <input
                       type="text"
@@ -1454,7 +1481,7 @@ SpecCon is ready with every tool you need to empower with purpose.
       <section id="resources-faqs" class="section light-background">
         <div class="container">
           <div class="section-title">
-            <h2>Resources and frequently asked questions</h2>
+            <h2>Resources and Frequently Asked Questions</h2>
           </div>
           <div
             class="d-flex gap-2 mb-3"
@@ -2422,6 +2449,7 @@ SpecCon is ready with every tool you need to empower with purpose.
             Surname: formData.get('surname') || '',
             Email: formData.get('email') || '',
             MobileNumber: formData.get('phone') || '',
+            NumberOfEmployees: formData.get('employees') || '',
             CompanyName: formData.get('company') || '',
             Reason: formData.get('reason') || '',
             Source: 'employmentequityact'
