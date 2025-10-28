@@ -900,7 +900,6 @@ section,
   line-height: 1px;
   margin: 0;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
 }
@@ -919,7 +918,6 @@ section,
   margin: 0;
   font-size: 36px;
   font-weight: 800;
-  text-transform: uppercase;
   font-family: var(--heading-font);
 }
 
@@ -1959,7 +1957,6 @@ section,
   line-height: 1.2;              /* readable, not cramped */
   margin: 0 0 .25rem 0;          /* some breathing room */
   letter-spacing: .06em;         /* subtler tracking than 1.5px */
-  text-transform: uppercase;     /* keep your style; remove if you prefer normal case */
   color: var(--bs-emphasis-color, var(--heading-color));
   display: inline-flex;          /* needed for the rule alignment */
   align-items: center;
