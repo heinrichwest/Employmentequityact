@@ -93,10 +93,30 @@
         color: #92abc4 !important;
       }
 
-      /* Hero button hover styling */
-      #home .btn-on-dark:hover {
+      /* Hero button styling */
+      #home .btn-on-dark.btn-get-started {
         background-color: #12265E !important;
         border-color: #12265E !important;
+        color: #FFFFFF !important;
+      }
+
+      #home .btn-on-dark.btn-get-started:hover {
+        background-color: #FFA600 !important;
+        border-color: #FFA600 !important;
+        color: #12265E !important;
+      }
+
+      /* Book your Demo button - different styling */
+      #home .btn-on-dark:not(.btn-get-started) {
+        background-color: #FFA600 !important;
+        border-color: #FFA600 !important;
+        color: #12265E !important;
+      }
+
+      #home .btn-on-dark:not(.btn-get-started):hover {
+        background-color: #12265E !important;
+        border-color: #12265E !important;
+        color: #FFFFFF !important;
       }
     </style>
   </head>
@@ -167,6 +187,52 @@
             <a href="#demo" class="btn btn-primary btn-on-dark"
               >Book your Demo</a
             >
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet Stephanie Section -->
+      <section id="meet-stephanie" class="section" style="padding: 0; margin: 0;">
+        <div class="container-fluid px-0">
+          <div class="row mt-0 mx-0">
+            <div class="col-12 px-0">
+              <div class="card border-0 shadow-lg rounded-0" style="background-color: #12265E; color: #FFFFFF; width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
+                <div class="card-body p-5">
+                  <div class="container">
+                    <div class="row align-items-center g-4">
+                      <div class="col-md-3 text-center">
+                        <img src="assets/img/Stephanie.jpeg" alt="Stephanie - EE Specialist" class="img-fluid rounded-circle" style="max-width: 250px; border: 5px solid #FFA600;">
+                        <div class="mt-3">
+                          <a href="mailto:stephanie@speccon.co.za" class="text-white stephanie-email-link" style="font-size: 1.1rem; text-decoration: none; transition: color 0.3s ease;">
+                            <i class="bi bi-envelope-fill me-2"></i>stephanie@speccon.co.za
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="mb-3" style="color: #FFA600;">Meet Stephanie: Your experienced EE Specialist</h3>
+                        <p class="mb-3">
+
+Stephanie leads our dedicated EE team — They are ready to guide your school to compliance, in a simple, efficient way.
+ </p>
+
+                        <blockquote class="blockquote border-start border-5 ps-4 mb-4" style="border-color: #FFA600 !important; font-size: 1.25rem; font-style: italic;">
+                          "Transformation isn't just about ticking boxes — it's about empowering people and building businesses that last. I'm here to help you do both."
+                        </blockquote>
+                        <div class="d-flex flex-wrap gap-3">
+                          <a href="#demo" class="btn btn-light btn-lg">
+                            <i class="bi bi-calendar-check me-2"></i>Book your demo
+                          </a>
+
+                        </div>
+                      </div>
+                      <div class="col-md-3 text-center">
+                        <img src="assets/img/Employment equity tool.png" alt="Employment Equity Tool" class="img-fluid rounded-3" style="max-width: 300px; border: 3px solid #FFA600;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1022,46 +1088,6 @@ SpecCon is ready with every tool you need to empower with purpose.
                         with system generated appointment letters, schedule
                         committee meetings and store relevant documentation.
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Meet Stephanie Section -->
-          <div class="row justify-content-center mt-5">
-            <div class="col-lg-10">
-              <div class="card border-0 shadow-lg rounded-4" style="background-color: #12265E; color: #FFFFFF;">
-                <div class="card-body p-5">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-4 text-center">
-                      <img src="assets/img/Stephanie.jpeg" alt="Stephanie - EE Specialist" class="img-fluid rounded-circle" style="max-width: 250px; border: 5px solid #FFA600;">
-                      <div class="mt-3">
-                        <a href="mailto:stephanie@speccon.co.za" class="text-white stephanie-email-link" style="font-size: 1.1rem; text-decoration: none; transition: color 0.3s ease;">
-                          <i class="bi bi-envelope-fill me-2"></i>stephanie@speccon.co.za
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-8">
-                      <h3 class="mb-3" style="color: #FFA600;">Meet Stephanie: Your experienced EE Specialist</h3>
-                      <p class="mb-3">
-                        With over a decade of experience in transformation strategy and compliance management, Stephanie leads our dedicated Envoy team — guiding top-tier subscribers through every step of their EE journey. Her approach is personal, practical, and rooted in an experienced understanding of unlocking the value of diversity for businesses like yours. 
-                      </p>
-                      <p class="mb-4">
-                        Whether it's demystifying legislation, streamlining submissions, or unlocking new levels of compliance excellence, Stephanie and her team are here to personally guide you.
-                      </p>
-                      <blockquote class="blockquote border-start border-5 ps-4 mb-4" style="border-color: #FFA600 !important; font-size: 1.25rem; font-style: italic;">
-                        "Transformation isn't just about ticking boxes — it's about empowering people and building businesses that last. I'm here to help you do both."
-                      </blockquote>
-                      <div class="d-flex flex-wrap gap-3">
-                        <a href="#demo" class="btn btn-light btn-lg">
-                          <i class="bi bi-calendar-check me-2"></i>Book your demo
-                        </a>
-                        <a href="Compressed%20-%20Employment%20Equity%20Guide.pdf" class="btn btn-outline-light btn-lg" download>
-                          <i class="bi bi-file-earmark-text me-2"></i>Quick introduction
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
