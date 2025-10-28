@@ -2474,14 +2474,14 @@ SpecCon is ready with every tool you need to empower with purpose.
 
           const formData = new FormData(form);
 
-          // Build the request payload matching the bookkeeper form structure
+          // Build the request payload matching the API structure
           const enquiryData = {
             Name: formData.get('firstName') || '',
             Surname: formData.get('surname') || '',
             Email: formData.get('email') || '',
             MobileNumber: formData.get('phone') || '',
             CompanyName: formData.get('company') || '',
-            NumEmployees: formData.get('employees') || '',
+            NumEmployees: 0,
             Reason: formData.get('reason') || '',
             Source: 'employmentequityact'
           };
