@@ -111,7 +111,8 @@
   const submitBtn = form.querySelector('button[type="submit"]');
   const defaultText = submitBtn?.dataset?.defaultText || submitBtn?.textContent || 'Submit';
   const submittingText = submitBtn?.dataset?.submitText || 'Sending…';
-  const endpoint = 'https://formsubmit.co/ajax/hermias@speccon.co.za';
+  // Use backend API endpoint instead of exposing FormSubmit directly
+  const endpoint = '/api/submit-form';
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();

@@ -10,7 +10,8 @@ const EEConfig = {
      API ENDPOINTS
      ======================================== */
   api: {
-    formSubmit: 'https://formsubmit.co/ajax/hermias@speccon.co.za',
+    // Backend endpoint - API keys are now hidden server-side
+    formSubmit: '/api/submit-form',
     contactEmail: 'hermias@speccon.co.za',
   },
 
