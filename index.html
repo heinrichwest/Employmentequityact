@@ -1369,10 +1369,10 @@ SpecCon is ready with every tool you need to empower with purpose.
                       required
                     >
                       <option value="" selected disabled>Select number of employees</option>
-                      <option value="1 to 5">1-5 employees</option>
-                      <option value="6 to 10">6-10 employees</option>
-                      <option value="11 to 20">11-20 employees</option>
-                      <option value=" over 20">More than 20 employees</option>
+                      <option value="1-5">1-5 employees</option>
+                      <option value="6-10">6-10 employees</option>
+                      <option value="11-20">11-20 employees</option>
+                      <option value="20+">More than 20 employees</option>
                     </select>
                     <div class="invalid-feedback">
                       Please select the number of employees.
@@ -2290,7 +2290,7 @@ SpecCon is ready with every tool you need to empower with purpose.
 
       .social-links .social-link:hover {
         background: #FFA600;
-        color: #12265E;
+        color: #FFFFFF;
         transform: translateY(-3px);
         box-shadow: 0 4px 12px rgba(255, 166, 0, 0.4);
       }
@@ -2481,7 +2481,7 @@ SpecCon is ready with every tool you need to empower with purpose.
             Email: formData.get('email') || '',
             MobileNumber: formData.get('phone') || '',
             CompanyName: formData.get('company') || '',
-            NumEmployees: formData.get('employees') || '',
+            EmployeeNumber: formData.get('employees') || '',
             Reason: formData.get('reason') || '',
             Source: 'employmentequityact'
           };
