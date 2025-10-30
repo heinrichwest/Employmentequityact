@@ -1319,10 +1319,14 @@ SpecCon is ready with every tool you need to empower with purpose.
                       name="firstName"
                       class="form-control"
                       required
+                      minlength="2"
+                      maxlength="50"
+                      pattern="[A-Za-z\s\-]+"
+                      title="Please enter a valid first name (letters only)"
                       autocomplete="given-name"
                     />
                     <div class="invalid-feedback">
-                      Please tell us your first name.
+                      Please enter a valid first name (minimum 2 characters, letters only).
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -1333,10 +1337,14 @@ SpecCon is ready with every tool you need to empower with purpose.
                       name="surname"
                       class="form-control"
                       required
+                      minlength="2"
+                      maxlength="50"
+                      pattern="[A-Za-z\s\-]+"
+                      title="Please enter a valid surname (letters only)"
                       autocomplete="family-name"
                     />
                     <div class="invalid-feedback">
-                      Please tell us your surname.
+                      Please enter a valid surname (minimum 2 characters, letters only).
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -1347,10 +1355,12 @@ SpecCon is ready with every tool you need to empower with purpose.
                       name="email"
                       class="form-control"
                       required
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      title="Please enter a valid email address (e.g., name@example.com)"
                       autocomplete="email"
                     />
                     <div class="invalid-feedback">
-                      Please provide a valid email address.
+                      Please provide a valid email address (e.g., name@example.com).
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -1361,10 +1371,13 @@ SpecCon is ready with every tool you need to empower with purpose.
                       name="phone"
                       class="form-control"
                       required
+                      pattern="[0-9+\s\-\(\)]{10,15}"
+                      title="Please enter a valid phone number (10-15 digits)"
+                      placeholder="e.g., 012 345 6789"
                       autocomplete="tel"
                     />
                     <div class="invalid-feedback">
-                      Please provide your phone number.
+                      Please provide a valid phone number (10-15 digits).
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -1394,10 +1407,14 @@ SpecCon is ready with every tool you need to empower with purpose.
                       name="company"
                       class="form-control"
                       required
+                      minlength="2"
+                      maxlength="100"
+                      pattern="[A-Za-z0-9\s\-\.\,\&\'\(\)]+"
+                      title="Please enter a valid company/school name"
                       autocomplete="organization"
                     />
                     <div class="invalid-feedback">
-                      Please provide your company name.
+                      Please provide a valid company/school name (minimum 2 characters).
                     </div>
                   </div>
                   <div class="col-12">
