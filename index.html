@@ -2482,6 +2482,28 @@ SpecCon is ready with every tool you need to empower with purpose.
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+
+    <!-- Form Validation Script -->
+    <script>
+      // Bootstrap form validation
+      (function() {
+        'use strict';
+
+        // Fetch the form we want to apply custom Bootstrap validation styles to
+        const form = document.getElementById('demoRequestForm');
+
+        if (form) {
+          form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add('was-validated');
+          }, false);
+        }
+      })();
+    </script>
   </body>
 </html>
 
