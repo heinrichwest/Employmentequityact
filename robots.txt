@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://employmentequityact.co.za/sitemap.xml
+
+# Disallow template/starter files
+Disallow: /index-clean-template.html
+Disallow: /starter-page.html
+Disallow: /portfolio-details.html
+Disallow: /service-details.html
+Disallow: /services-bookkeeper-nqf5.html
