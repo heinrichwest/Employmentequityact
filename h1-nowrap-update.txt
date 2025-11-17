@@ -1,0 +1,47 @@
+H1 NO-WRAP UPDATE - ee-benefits.html
+=====================================
+
+Ensured H1 text stays on one line on desktop without breaking.
+
+CHANGES MADE:
+-------------
+
+1. DESKTOP H1 STYLING:
+   Added: white-space: nowrap;
+   
+   This ensures "Where individuals and companies grow together." 
+   remains on a single line on desktop screens.
+
+2. RESPONSIVE BREAKPOINT:
+   Added media query at 992px (tablet and below):
+   
+   @media (max-width: 992px) {
+     .section-title h1 {
+       white-space: normal;
+     }
+   }
+   
+   This allows the text to wrap naturally on smaller screens
+   to prevent horizontal scrolling.
+
+BEHAVIOR:
+---------
+
+Desktop (>992px):  Text stays on one line [✓]
+Tablet (≤992px):   Text wraps naturally if needed
+Mobile (≤768px):   Text wraps and stacks with mobile styling
+
+EXAMPLE:
+--------
+Desktop:
+  "Where individuals and companies grow together." [────────]
+  ↑ All on one line
+
+Tablet/Mobile:
+  "Where individuals and companies
+   grow together."
+  ↑ Wraps when needed
+
+STATUS: ✓ Complete
+The H1 will now stay on one line on desktop while remaining
+responsive on smaller devices.

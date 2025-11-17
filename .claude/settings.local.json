@@ -11,7 +11,8 @@
       "Bash(done)",
       "Bash(while read file)",
       "Bash(do echo \"File: $file\" grep 'name=\"\"\"\"description\"\"\"\"' \"$file\")",
-      "Bash(echo \"  -> Missing meta description\" echo \"\" done)"
+      "Bash(echo \"  -> Missing meta description\" echo \"\" done)",
+      "Bash(git config:*)"
     ],
     "deny": [],
     "ask": []

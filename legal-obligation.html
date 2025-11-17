@@ -55,6 +55,38 @@
 
     <!-- Page-scoped styles (aligned with previous sections) -->
     <style>
+      /* Stronger section H1 (similar to H2) */
+      .section-title h1 {
+        font-size: clamp(2rem, 1.2rem + 2.5vw, 3rem);
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0 0 0.25rem 0;
+        letter-spacing: 0.06em;
+        text-transform: none;
+        color: var(--heading-color);
+        display: inline-flex;
+        padding: 0.25rem 0;
+        align-items: center;
+        white-space: nowrap;
+      }
+      .section-title h1::after {
+        content: "";
+        display: inline-block;
+        width: clamp(100px, 16vw, 200px);
+        height: 3px;
+        margin-left: 0.75rem;
+        background: var(--bs-primary);
+        border-radius: 999px;
+        opacity: 0.9;
+      }
+
+      /* Allow H1 wrapping on tablet and smaller screens */
+      @media (max-width: 992px) {
+        .section-title h1 {
+          white-space: normal;
+        }
+      }
+
       /* Stronger section H2 (aligned with your updated style) */
       .section-title h2 {
         font-size: clamp(1.75rem, 1.1rem + 2vw, 2.5rem);
@@ -864,6 +896,19 @@
           word-wrap: break-word !important;
           overflow-wrap: break-word !important;
           width: 100% !important;
+        }
+
+        .section-title h1 {
+          font-size: clamp(1.75rem, 5.5vw, 2.25rem) !important;
+          line-height: 1.3 !important;
+          flex-direction: column !important;
+          align-items: flex-start !important;
+        }
+
+        .section-title h1::after {
+          margin-left: 0 !important;
+          margin-top: 0.5rem !important;
+          width: 100px !important;
         }
 
         .section-title h2 {
