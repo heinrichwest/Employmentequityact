@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(npx --version)",
+      "Bash(npx terser:*)",
+      "Bash(npx csso-cli:*)",
+      "Bash(find:*)",
+      "Bash(for file in index.html ee-benefits.html growth-through-inclusion.html legal-obligation.html penalties.html public-sector-eligibility.html)",
+      "Bash(do echo \"=== $file ===\" grep -E \"(bootstrap-icons|main)\\.(min\\.)?(css|js)\" \"$file\")",
+      "Bash(done)",
+      "Bash(while read file)",
+      "Bash(do echo \"File: $file\" grep 'name=\"\"\"\"description\"\"\"\"' \"$file\")",
+      "Bash(echo \"  -> Missing meta description\" echo \"\" done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
